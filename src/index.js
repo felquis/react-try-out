@@ -3,10 +3,6 @@ import {render} from 'react-dom'
 import Login from './screens/login'
 
 class About extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
   render() {
     return (
       <div>
@@ -17,10 +13,6 @@ class About extends React.Component {
 }
 
 class Inbox extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
   render() {
     return (
       <div>
@@ -31,10 +23,6 @@ class Inbox extends React.Component {
 }
 
 class Home extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
   render() {
     return (
       <div>
@@ -45,8 +33,9 @@ class Home extends React.Component {
 }
 
 class App extends React.Component {
-  constructor(props) {
-    super(props)
+  constructor() {
+    super()
+
     this.state = {
       route: window.location.hash.substr(1)
     }

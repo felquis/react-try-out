@@ -1,5 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import CaptureCreditCard from './CaptureCreditCard'
+import BoilingVerdict from './BoilingVerdict'
 
-ReactDOM.render(<CaptureCreditCard />, document.getElementById('root'))
+ReactDOM.render(<BoilingVerdict />, document.getElementById('root'))

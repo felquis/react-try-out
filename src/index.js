@@ -1,6 +1,7 @@
 import React from 'react'
 import {render} from 'react-dom'
 import Login from './screens/login'
+import { Router, Route, IndexRoute, Link, hashHistory } from 'react-router'
 
 class About extends React.Component {
   render() {
@@ -33,43 +34,28 @@ class Home extends React.Component {
 }
 
 class App extends React.Component {
-  constructor() {
-    super()
-
-    this.state = {
-      route: window.location.hash.substr(1)
-    }
-  }
-
-  componentDidMount() {
-    window.addEventListener('hashchange', () => {
-      this.setState({
-        route: window.location.hash.substr(1)
-      })
-    })
-  }
-
   render() {
-    let Child
-
-    switch (this.state.route) {
-      case '/about': Child = About; break;
-      case '/inbox': Child = Inbox; break;
-      default: Child = Home
-    }
-
     return (
-      <div className="element">
+      <div>
         <h1>App</h1>
+
         <ul>
-          <li><a href="#/about">about</a></li>
-          <li><a href="#/inbox">inbox</a></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/inbox">Inbox</Link></li>
         </ul>
-        <Child />
+
+        {this.props.children}
       </div>
     )
   }
 }
 
-
-render(<App />, document.getElementById('root'))
+render((
+  <Router history={hashHistory}>
+    <Route path="/" component={App}>
+      <IndexRoute component={Home} />
+      <Route path="about" component={About} />
+      <Route path="inbox" component={Inbox} />
+    </Route>
+  </Router>
+), document.getElementById('root'))

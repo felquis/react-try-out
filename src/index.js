@@ -13,11 +13,37 @@ class About extends React.Component {
   }
 }
 
+class Message extends React.Component {
+  constructor(props) {
+    super()
+
+    console.log('Message: ', props.params.id)
+  }
+
+  render() {
+    return <h3>Message</h3>
+  }
+}
+
 class Inbox extends React.Component {
   render() {
     return (
       <div>
         <h1>Inbox</h1>
+
+        <Link to="inbox/messages/123">message</Link>
+
+        {this.props.children}
+      </div>
+    )
+  }
+}
+
+class InboxHome extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Inbox Home</h1>
       </div>
     )
   }
@@ -55,7 +81,10 @@ render((
     <Route path="/" component={App}>
       <IndexRoute component={Home} />
       <Route path="about" component={About} />
-      <Route path="inbox" component={Inbox} />
+      <Route path="inbox" component={Inbox}>
+        <IndexRoute component={InboxHome} />
+        <Route path="messages/:id" component={Message} />
+      </Route>
     </Route>
   </Router>
 ), document.getElementById('root'))

@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.list {
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  max-height: 500px;
+  background-color: #19cade;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.item {
+  width: calc(100% / 3);
+  height: calc(100% / 3);
+  background: silver;
+  display: block;
+  outline: 1px solid;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+
+.itemActive {
+  // position: absolute;
+  // bottom: 0;
+  // right: 0;
+  // width: 100%;
+  // height: 100%;
+  transform: scale(0.9);
+}
+
+.item:hover {
+  // transform: scale(0.9);
+}

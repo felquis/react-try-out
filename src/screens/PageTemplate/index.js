@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router'
 import st from './index.css'
+import Header from './../../components/Header.js'
 
 class PageTemplate extends React.Component {
   constructor() {
@@ -20,11 +21,9 @@ class PageTemplate extends React.Component {
 
     return (
       <div className={st.property}>
-        <header className="header">
-          <div className="container">
-            <Link to="/">Page Template</Link>
-          </div>
-        </header>
+        <Header logo={() => (
+          <Link to="/">Voltar</Link>
+        )} />
 
         <div className="article-page">
           <div className="container">

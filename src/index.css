@@ -8,14 +8,6 @@
   height: 100%;
 }
 
-:global .header {
-  width: 100%;
-  height: 4em;
-  display: flex;
-  align-items: center;
-  background: silver;
-}
-
 :global .container {
   width: 80%;
   margin: 0 auto;
@@ -24,3 +16,38 @@
 :global .article-page {
   margin-top: 3em;
 }
+
+:global .header {
+  width: 100%;
+  height: 4em;
+  display: flex;
+  align-items: center;
+  background: silver;
+}
+
+:global .header-align {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+:global .menu {
+  display: flex;
+  height: 100%; 
+}
+
+:global .menu-item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+:global .menu-item:hover {
+  background: #19cade;
+  color: #fff;
+  cursor: pointer;
+}
+

@@ -10,7 +10,6 @@ class PageTemplate extends React.Component {
   }
 
   handleEvent() {
-    console.log('handleEvent')
     this.setState({ property: !this.state.property })
   }
 
@@ -21,14 +20,20 @@ class PageTemplate extends React.Component {
 
     return (
       <div className={st.property}>
-        <Link to="/">Page Template</Link>
+        <header className="header">
+          <div className="container">
+            <Link to="/">Page Template</Link>
+          </div>
+        </header>
 
-        <div>
-          <button
-            className={st.property}
-            onClick={this.handleEvent}>
-            Turn { property ? 'On' : 'Off' }
-          </button>
+        <div className="article-page">
+          <div className="container">
+            <button
+              className={st.property}
+              onClick={this.handleEvent}>
+                Turn { property ? 'On' : 'Off' }
+            </button>
+          </div>
         </div>
       </div>
     )

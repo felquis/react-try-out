@@ -4,7 +4,8 @@
 
 :global html,
 :global body,
-:global #root {
+:global #root,
+:global [data-reactroot]{
   height: 100%;
 }
 
@@ -49,5 +50,9 @@
   background: #19cade;
   color: #fff;
   cursor: pointer;
+}
+
+:global .full-height {
+  height: calc(100% - 3em - 4em)
 }
 

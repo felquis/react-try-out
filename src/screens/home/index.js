@@ -12,7 +12,10 @@ class Home extends React.Component {
             <div>Alo!</div>
           )} />
           <Content children={() => (
-            <Link to="page-template">Page Template</Link>
+            <div>
+              <Link to="page-template">Page Template</Link> <br />
+              <Link to="b-little">B Little</Link>
+            </div>
           )} />
         </nav>
       </div>

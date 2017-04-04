@@ -2,6 +2,7 @@ import React from 'react'
 import {render} from 'react-dom'
 import Home from './screens/home'
 import PageTemplate from './screens/PageTemplate/index.js'
+import BLittle from './screens/b-little/index.js'
 import styles from './index.css'
 import { Router, Route, IndexRoute, hashHistory } from 'react-router'
 
@@ -21,6 +22,7 @@ render((
       <IndexRoute component={Home} />
 
       <Route path="page-template" component={PageTemplate} />
+      <Route path="b-little" component={BLittle} />
     </Route>
   </Router>
 ), document.getElementById('root'))

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router'
 import st from './index.css'
+import Header from './../../components/Header.js'
 
 class PageTemplate extends React.Component {
   constructor() {
@@ -10,7 +11,6 @@ class PageTemplate extends React.Component {
   }
 
   handleEvent() {
-    console.log('handleEvent')
     this.setState({ property: !this.state.property })
   }
 
@@ -21,14 +21,18 @@ class PageTemplate extends React.Component {
 
     return (
       <div className={st.property}>
-        <Link to="/">Page Template</Link>
+        <Header logo={() => (
+          <Link to="/">Voltar</Link>
+        )} />
 
-        <div>
-          <button
-            className={st.property}
-            onClick={this.handleEvent}>
-            Turn { property ? 'On' : 'Off' }
-          </button>
+        <div className="article-page">
+          <div className="container">
+            <button
+              className={st.property}
+              onClick={this.handleEvent}>
+                Turn { property ? 'On' : 'Off' }
+            </button>
+          </div>
         </div>
       </div>
     )

@@ -14,7 +14,7 @@ class Home extends React.Component {
           <Content children={() => (
             <div>
               <Link to="page-template">Page Template</Link> <br />
-              <Link to="b-little">B Little</Link>
+              <Link to="simple-form">Simple Form</Link>
             </div>
           )} />
         </nav>

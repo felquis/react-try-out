@@ -1,12 +1,14 @@
 import React from 'react'
 import { render } from 'react-dom'
+import { Router, Route, IndexRoute, hashHistory } from 'react-router'
+
 import Home from './screens/Home'
 import PageTemplate from './screens/PageTemplate'
 import SimpleForm from './screens/SimpleForm'
 import Financial from './screens/Financial'
 import NewOne from './screens/NewOne'
-import './index.css'
-import { Router, Route, IndexRoute, hashHistory } from 'react-router'
+
+import st from './index.css'
 
 const Children = (props) => {
   return (
@@ -21,7 +23,7 @@ class App extends React.Component {
         <Route
           path="/"
           component={Children}
-          className="outer-root"
+          className={st.outerRoot}
         >
           <IndexRoute component={Home} />
           <Route path="page-template" component={PageTemplate} />
@@ -35,5 +37,3 @@ class App extends React.Component {
 }
 
 render(<App />, document.getElementById('root'))
-
-

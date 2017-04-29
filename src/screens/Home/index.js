@@ -5,7 +5,7 @@ import Content from '../../components/Content'
 
 import { Link } from 'react-router'
 
-import st from './style.css'
+import st from './index.css'
 
 class Home extends React.Component {
   constructor() {
@@ -32,12 +32,12 @@ class Home extends React.Component {
       ]
     }
   }
-  
+
   render() {
     const { navigations } = this.state
 
     return (
-      <div className={st.outerHome}>
+      <div className={st.pageArticle}>
         <nav className={st.navigation}>
           <Header logo={() => (
             <div>Alo!</div>

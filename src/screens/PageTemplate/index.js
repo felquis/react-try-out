@@ -25,8 +25,8 @@ class PageTemplate extends React.Component {
           <Link to="/">Voltar</Link>
         )} />
 
-      <div className="article-page">
-        <div className="container">
+      <div className={st.articlePage}>
+        <div className={st.container}>
           <button
             className={st.property}
             onClick={this.handleEvent}>
@@ -39,4 +39,4 @@ class PageTemplate extends React.Component {
   }
 }
 
-export default PageTemplate 
+export default PageTemplate

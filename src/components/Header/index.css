@@ -1,0 +1,40 @@
+.outerHeader {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  background-image: linear-gradient(45deg, #2b775e, #5a772b);
+  color: #fff;
+}
+
+.header {
+  width: 100%;
+  height: 4em;
+  display: flex;
+  align-items: center;
+}
+
+.pageArticle {
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerPrimary {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.headerAlign {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}

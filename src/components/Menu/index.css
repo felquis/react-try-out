@@ -1,9 +1,9 @@
-:local .menu {
+.menu {
   display: flex;
   height: 100%;
 }
 
-:local .menuItem {
+.menuItem {
   display: flex;
   align-items: center;
   height: 100%;
@@ -11,11 +11,10 @@
   padding-right: 1em;
 }
 
-:local .menuItem:hover,
-:local .menuItem:active,
-:local .menuItem:focus {
+.menuItem:hover,
+.menuItem:active,
+.menuItem:focus {
   background: #77732b;
   color: #fff;
   cursor: pointer;
 }
-

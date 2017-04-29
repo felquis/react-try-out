@@ -1,4 +1,4 @@
-:local .item {
+.item {
   display: block;
   background-color: #77642b;
   color: #fff;
@@ -15,53 +15,53 @@
   position: relative;
 }
 
-:local .item:nth-child(1) {
+.item:nth-child(1) {
   background-image: url(http://lorempixel.com/g/500/500/food/1/);
 }
 
-:local .item:nth-child(2) {
+.item:nth-child(2) {
   background-image: url(http://lorempixel.com/g/500/500/transport/4/);
 }
 
-:local .item:nth-child(3) {
+.item:nth-child(3) {
   background-image: url(http://lorempixel.com/g/500/500/transport/5/);
 }
 
-:local .item:nth-child(4) {
+.item:nth-child(4) {
   background-image: url(http://lorempixel.com/g/500/500/transport/6/);
 }
 
-:local .item:nth-child(5) {
+.item:nth-child(5) {
   background-image: url(http://lorempixel.com/g/500/500/transport/7/);
 }
 
-:local .item:hover,
-:local .item:active {
+.item:hover,
+.item:active {
   width: 140%;
 }
 
-:local .navigation {
+.navigation {
   height: 100%;
   display: flex;
   flex-direction: column;
 }
 
-:local .page {
+.page {
   display: flex;
 }
 
-:local .innerContainer {
+.innerContainer {
   width: 100%;
   height: 100%;
   display: flex;
 }
 
-:local .outerHome {
+.pageArticle {
   height: 100%;
 }
 
 @media screen and (min-width: 1024px) {
-  :local .item {
+  .item {
     display: block;
   }
 }

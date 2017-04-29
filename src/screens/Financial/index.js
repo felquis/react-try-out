@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router'
+
 import st from './index.css'
+
 import Header from './../../components/Header'
 import config from './config.js'
 import moment from 'moment'
@@ -25,7 +27,7 @@ class PageTemplate extends React.Component {
     })
 
     this.setState({
-      dailyExpensesTotal: calculateTotalDailyExpenses(this.state.dailyExpenses) 
+      dailyExpensesTotal: calculateTotalDailyExpenses(this.state.dailyExpenses)
     })
 
     this.setState({
@@ -63,8 +65,8 @@ class PageTemplate extends React.Component {
           <Link to="/">Voltar</Link>
         )} />
 
-      <div className="article-page">
-        <div className="container">
+      <div className={st.articlePage}>
+        <div className={st.container}>
           <div>
             <ul>
               <li>

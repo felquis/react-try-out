@@ -15,10 +15,3 @@
 :global [data-reactroot]{
   height: 100%;
 }
-
-:global .header-primary > div {
-  display: flex;
-  align-items: center;
-  transform: translate(1em, 0em);
-}
-

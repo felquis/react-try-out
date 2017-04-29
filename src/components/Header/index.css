@@ -32,6 +32,12 @@
   width: 100%;
 }
 
+.headerPrimary > div {
+  display: flex;
+  align-items: center;
+  transform: translate(1em, 0em);
+}
+
 .headerAlign {
   display: flex;
   justify-content: space-between;

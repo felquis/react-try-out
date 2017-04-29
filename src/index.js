@@ -19,17 +19,37 @@ const Children = (props) => {
 class App extends React.Component {
   render() {
     return (
-      <Router history={hashHistory}>
+      <Router className={st.page} history={hashHistory}>
         <Route
           path="/"
           component={Children}
-          className={st.outerRoot}
+          className={st.page}
         >
-          <IndexRoute component={Home} />
-          <Route path="page-template" component={PageTemplate} />
-          <Route path="simple-form" component={SimpleForm} />
-          <Route path="financial" component={Financial} />
-          <Route path="new-one" component={NewOne} />
+          <IndexRoute
+            component={Home}
+            className={st.page}
+          />
+
+          <Route
+            path="page-template"
+            component={PageTemplate}
+            className={st.page}
+          />
+
+          <Route
+            path="simple-form"
+            component={SimpleForm}
+          />
+
+          <Route
+            path="financial"
+            component={Financial}
+          />
+
+          <Route
+            path="new-one"
+            component={NewOne}
+          />
         </Route>
       </Router>
     )

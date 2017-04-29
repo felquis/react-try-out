@@ -81,7 +81,6 @@ module.exports = {
       'react-native': 'react-native-web'
     }
   },
-
   module: {
     // First, run the linter.
     // It's important to do this before Babel processes the JS.
@@ -116,7 +115,7 @@ module.exports = {
       // in development "style" loader enables hot editing of CSS.
       {
         test: /\.s?css$/,
-        loader: 'style!css?importLoaders=1&modules!postcss!sass'
+        loader: 'style!css?importLoaders=1&modules!postcss'
       },
       // JSON is not enabled by default in Webpack but both Node and Browserify
       // allow it implicitly so we also enable it.

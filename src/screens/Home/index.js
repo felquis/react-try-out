@@ -34,40 +34,37 @@ class Home extends React.Component {
   }
 
   render() {
+    console.log('render')
+
     const { navigations } = this.state
 
     return (
       <div className={st.pageArticle}>
         <nav className={st.navigation}>
           <Header logo={() => (
-            <div>Alo!</div>
-          )} />
-        <Content children={() => Navigation(navigations) } />
-      </nav>
-    </div>
+              <div>Alo!</div>
+            )}
+          />
+
+        <Content className={'asasa'} children={() => {
+            return (
+              <div className={st.innerContainer}>
+                {navigations.map((navigation, key) => {
+                  return (
+                    <Link
+                      key={key}
+                      className={st.item}
+                      to={navigation.to}
+                    >{navigation.label}</Link>
+                  )
+                })}
+              </div>
+            )}}
+          />
+        </nav>
+      </div>
     )
   }
-}
-
-function Navigation (navigations) {
-  return (
-    <div className={st.innerContainer}>
-      {buildList(navigations)}
-    </div>
-  )
-}
-
-function buildList (navigations) {
-  return navigations.map((navigation, key) => {
-    return (
-      <Link
-        key={key}
-        className={st.item}
-        to={navigation.to}
-        label={navigation.label}
-      />
-    )
-  })
 }
 
 export default Home

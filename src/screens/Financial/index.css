@@ -1,0 +1,9 @@
+.true {
+  background: rgb(200, 30, 30);
+  color: #fff
+}
+
+.false {
+  background: #666;
+  color: #000
+}

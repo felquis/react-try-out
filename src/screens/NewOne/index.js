@@ -39,4 +39,4 @@ class PageTemplate extends React.Component {
   }
 }
 
-export default PageTemplate 
+export default PageTemplate

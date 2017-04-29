@@ -1,0 +1,21 @@
+:local .menu {
+  display: flex;
+  height: 100%;
+}
+
+:local .menuItem {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+:local .menuItem:hover,
+:local .menuItem:active,
+:local .menuItem:focus {
+  background: #77732b;
+  color: #fff;
+  cursor: pointer;
+}
+

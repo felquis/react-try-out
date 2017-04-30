@@ -20,3 +20,11 @@
   align-items: center;
   justify-content: center;
 }
+
+.link {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transform: translate(1em, 0)
+}

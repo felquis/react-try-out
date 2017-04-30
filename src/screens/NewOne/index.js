@@ -1,7 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router'
 import st from './index.css'
-import Header from './../../components/Header'
+import GoBack from './../../components/GoBack'
 
 class PageTemplate extends React.Component {
   constructor() {
@@ -21,20 +20,18 @@ class PageTemplate extends React.Component {
 
     return (
       <div className={st.property}>
-        <Header logo={() => (
-          <Link to="/">Voltar</Link>
-        )} />
-
-      <div className={st.articlePage}>
-        <div className={st.container}>
-          <button
-            className={st.property}
-            onClick={this.handleEvent}>
-            Turn { property ? 'On' : 'Off' }
-          </button>
+        <GoBack />
+       
+        <div className={st.articlePage}>
+          <div className={st.container}>
+            <button
+              className={st.property}
+              onClick={this.handleEvent}>
+              Turn { property ? 'On' : 'Off' }
+            </button>
+          </div>
         </div>
       </div>
-    </div>
     )
   }
 }

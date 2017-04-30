@@ -17,22 +17,27 @@
 
 .item:nth-child(1) {
   background-image: url(http://lorempixel.com/g/500/500/food/1/);
+  background-color: rgb(100, 200, 255);
 }
 
 .item:nth-child(2) {
   background-image: url(http://lorempixel.com/g/500/500/transport/4/);
+  background-color: rgb(255, 200, 100);
 }
 
 .item:nth-child(3) {
   background-image: url(http://lorempixel.com/g/500/500/transport/5/);
+  background-color: rgb(255, 255, 100);
 }
 
 .item:nth-child(4) {
   background-image: url(http://lorempixel.com/g/500/500/transport/6/);
+  background-color: rgb(100, 255, 100);
 }
 
 .item:nth-child(5) {
   background-image: url(http://lorempixel.com/g/500/500/transport/7/);
+  background-color: rgb(100, 100, 100);
 }
 
 .item:hover,

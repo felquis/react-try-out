@@ -1,16 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router'
 
-import Header from './../../components/Header'
 import st from './index.css'
+import GoBack from './../../components/GoBack'
 
 class SimpleForm extends React.Component {
   render() {
     return (
       <div className={st.fullHeight}>
-        <Header logo={() => (
-          <Link to="/">Voltar</Link>
-        )} />
+        <GoBack /> 
 
       <div className={st.articlePage}>
         <div className={st.container}>

@@ -15,6 +15,11 @@ head {
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: translate(0, 4em);
+}
+
+.subRoot {
+
 }
 
 .row {
@@ -52,4 +57,8 @@ head {
   justify-content: space-around;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
+}
+
+.subRoot {
+
 }

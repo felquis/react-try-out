@@ -2,17 +2,17 @@ import React from 'react'
 import { render } from 'react-dom'
 import { Router, Route, IndexRoute, hashHistory } from 'react-router'
 
-import Home from './screens/Home'
-import PageTemplate from './screens/PageTemplate'
-import SimpleForm from './screens/SimpleForm'
-import Financial from './screens/Financial'
-import NewOne from './screens/NewOne'
+import Home from './screens/home'
+import PageTemplate from './screens/pagetemplate'
+import SimpleForm from './screens/simpleform'
+import Financial from './screens/financial'
+import NewOne from './screens/newone'
 
 import st from './index.css'
 
 const Children = (props) => {
   return (
-    <div>{props.children}</div>
+    <div className={st.container}>{props.children}</div>
   )
 }
 
@@ -57,3 +57,4 @@ class App extends React.Component {
 }
 
 render(<App />, document.getElementById('root'))
+

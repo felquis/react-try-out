@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from './../Header'
+import Header from './../header'
 import { Link } from 'react-router'
 import st from './index.css'
 import Icon from 'react-icons/lib/fa/chevron-left'

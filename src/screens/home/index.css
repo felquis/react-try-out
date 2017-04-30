@@ -1,0 +1,16 @@
+.flexColumn {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.subRoot {
+  height: 100%;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .navItem {
+    display: block;
+  }
+}

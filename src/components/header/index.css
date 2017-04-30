@@ -1,5 +1,5 @@
 .outerHeader {
-  position: absolute;
+  position: fixed;
   z-index: 1;
   width: 100%;
   background-image: linear-gradient(45deg, #2b775e, #5a772b);

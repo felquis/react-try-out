@@ -1,15 +1,14 @@
 import React from 'react'
 
 import st from './index.css'
-import GoBack from './../../components/GoBack'
+import GoBack from './../../components/goback'
 
 class SimpleForm extends React.Component {
   render() {
     return (
-      <div className={st.fullHeight}>
+      <div className={st.subRoot}>
         <GoBack /> 
 
-      <div className={st.articlePage}>
         <div className={st.container}>
           <div>
             <div className={st.row}>
@@ -37,9 +36,8 @@ class SimpleForm extends React.Component {
               <button>Next</button>
             </div>
           </div>
-        </div> {/* container */}
-      </div> {/* article-page */}
-    </div>
+        </div>
+      </div>
     )
   }
 }

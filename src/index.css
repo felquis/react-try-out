@@ -5,28 +5,14 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-:local .navigation {
-  height: 100%;
-}
-
 :global html,
 :global body,
-:global #root,
-:global [data-reactroot]{
+:global #root {
   height: 100%;
 }
 
-.page {
+:local .page,
+:local .container {
   height: 100%;
 }
-
-.container {
-  width: 100%;
-  margin: 0 auto;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 

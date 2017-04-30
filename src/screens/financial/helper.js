@@ -61,14 +61,12 @@ function calculateFreePerDay ({
 
   const totalDailyPerDay = dailyExpensesTotal / a
 
-  console.log(a, totalDailyPerDay);
-
   return moneyPerDay - accountabilityPerDay - totalDailyPerDay
 }
 
-function calculateTotalAccountability (state) {
-  const total = state.accountabilities.reduce((acc, actb) => {
-    return acc + applyAccountability(actb.type, actb.perCircle, state.money)
+function calculateTotalAccountability (accountabilities, money) {
+  const total = accountabilities.reduce((acc, actb) => {
+    return acc + applyAccountability(actb.type, actb.perCircle, money)
   }, 0)
 
   return total
